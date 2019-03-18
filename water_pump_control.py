@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO       	# Import required Python libraries
 import time
+import Tkinter
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7,GPIO.OUT)
