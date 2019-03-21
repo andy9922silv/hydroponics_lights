@@ -18,12 +18,12 @@ GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and se
 current_time = datetime.now()
 print(str(current_time))
 
-if (current_time.hour >= 9 and current_time.minute >=56):
+if (current_time.hour >= 9 and current_time.minute >=40):
     while True: # Run forever
      GPIO.output(8, GPIO.HIGH) # Turn on
-     sleep(2) # Sleep for 2 seconds
+     sleep(15) # Sleep for 2 seconds
      GPIO.output(8, GPIO.LOW) # Turn off
      sleep(5) # Sleep for 5 seconds
 
 else:
-    print ("It is before 9:56")
+    print ("It is before 9:40")
