@@ -21,7 +21,7 @@ print(str(current_time))
 if (current_time.hour >= 9 and current_time.minute >=40):
     while True: # Run forever
      GPIO.output(8, GPIO.HIGH) # Turn on
-     sleep(15) # Sleep for 2 seconds
+     sleep(15) # Sleep for 15 seconds
      GPIO.output(8, GPIO.LOW) # Turn off
      sleep(5) # Sleep for 5 seconds
 
