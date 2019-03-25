@@ -4,6 +4,8 @@ from time import sleep # Import the sleep function from the time module
 
 current_time = datetime.now()
 print datetime.now()
+print current_time.minute
+print current_time.hour
 
 #while True:
         #if(current_time.minute =0)
