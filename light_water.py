@@ -16,7 +16,7 @@ print (current_time.hour-7)
 i = 7
 
 while (i < i + 1):
-        if(current_time.minute == 47):
+        if(current_time.minute == 49):
                 print "test"
                 GPIO.output(8, GPIO.HIGH) # Turn on
                 sleep(600000) # Sleep for 10 minutes
