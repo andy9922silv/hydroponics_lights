@@ -13,7 +13,7 @@ print current_time.minute
 print (current_time.hour-7)
 
 
-int i =7
+i = 7
 
 while (i < i + 1):
         if(current_time.minute == 47):
