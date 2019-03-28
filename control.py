@@ -22,7 +22,7 @@ print (current_time.hour-7)
 # pin 8 controls the light
 
 while True:
-        if (datetime.now().minute == 01):
+        if (datetime.now().minute == 30):
                 GPIO.output(8, GPIO.HIGH) # Turn on
                 sleep(2400) # Sleep for 40 minutes
                 GPIO.setup(RELAIS_1_GPIO, GPIO.OUT) # GPIO Assign mode
