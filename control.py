@@ -7,8 +7,8 @@ GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
 GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and set initial value to low (off)
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(17, GPIO.OUT, initial=GPIO.LOW)
-RELAIS_1_GPIO = 17
+GPIO.setup(22, GPIO.OUT, initial=GPIO.LOW)
+RELAIS_1_GPIO = 22
 
 
 current_time = datetime.now()
@@ -29,7 +29,7 @@ while True:
                 GPIO.output(RELAIS_1_GPIO, GPIO.LOW) # out
                 GPIO.output(RELAIS_1_GPIO, GPIO.HIGH) # on
                 time.sleep(0.25)
-                GPIO.output(17, GPIO.HIGH)
+                GPIO.output(22, GPIO.HIGH)
                 GPIO.cleanup()
                 GPIO.output(8, GPIO.LOW) # Turn off
                 sleep(1140) # Sleep for 19 minutes
