@@ -17,9 +17,9 @@ print current_time.hour
 while True:
     minute = datetime.now().minute
     hour = datetime.now().hour
-    if (minute % 2 == 0)
+    if (minute % 2 == 0):
         GPIO.output(8, GPIO.HIGH) # Turn on
-    if (minute % 2 == 1)
+    if (minute % 2 == 1):
         GPIO.cleanup()
         GPIO.output(8, GPIO.LOW) # Turn off
 
