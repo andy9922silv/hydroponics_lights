@@ -22,4 +22,3 @@ while True:
     if (minute % 2 == 1):
         GPIO.output(8, GPIO.LOW) # Turn off
 
-    time.sleep(2)
