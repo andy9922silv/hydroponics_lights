@@ -20,7 +20,6 @@ while True:
     if (minute % 2 == 0):
         GPIO.output(8, GPIO.HIGH) # Turn on
     if (minute % 2 == 1):
-        GPIO.cleanup()
         GPIO.output(8, GPIO.LOW) # Turn off
 
     time.sleep(2)
