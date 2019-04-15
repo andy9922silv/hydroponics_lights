@@ -7,12 +7,10 @@ GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
 GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and set initial value to low (off)
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(22, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(RELAIS_1_GPIO, GPIO.OUT) # GPIO Assign mode
-GPIO.output(RELAIS_1_GPIO, GPIO.LOW) # out
-GPIO.output(RELAIS_1_GPIO, GPIO.HIGH) # on
-RELAIS_1_GPIO = 22
-
+GPIO.setwarnings(False) # Ignore warning for now
+GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
+GPIO.setup(22, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and set initial value to low (off)
+GPIO.setmode(GPIO.BOARD)
 
 current_time = datetime.now()
 print datetime.now()
