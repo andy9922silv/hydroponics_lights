@@ -21,7 +21,7 @@ print current_time.hour
 # pin 8 controls the light
 
 #ph constant check like every minute or 10 times per minute
-#bunch of if statements
+#bunch of if statements    
 
 ph_constant = 2
 wp_constant = 4
