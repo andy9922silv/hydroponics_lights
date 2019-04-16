@@ -38,7 +38,7 @@ while True:
     # this if statement checks the time and turns on or off the pump
     if(hour % 2 == 0 and minute <= 40):
         GPIO.output(22, GPIO.HIGH) # Turn on
-    else
+    else:
         GPIO.output(22, GPIO.LOW) # Turn off
     # this if statement checks the time and turns off the lights
     if(minute == 51):
