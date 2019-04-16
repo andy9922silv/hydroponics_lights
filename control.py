@@ -48,4 +48,4 @@ while True:
         if (minute % wp_constant == 0 and minute < wp_for )
 
 
-        time.sleep(2) # sleeps for 2 seconds
+        #time.sleep(2) # sleeps for 2 seconds
