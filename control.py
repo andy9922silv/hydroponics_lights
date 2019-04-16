@@ -17,8 +17,8 @@ print (current_time.hour-8)
 
 
 # if statement works after the first minute of every hour
-# pin 17 controls the water pump with the relay control
-# pin 8 controls the light
+# pin 22 controls the water pump with the relay control
+# pin 19 controls the light
 
 #ph constant check like every minute or 10 times per minute
 #bunch of if statements    
