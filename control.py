@@ -12,7 +12,7 @@ GPIO.setmode(GPIO.BOARD)
 current_time = datetime.now()
 print datetime.now()
 print current_time.minute
-print current_time.hour
+print (current_time.hour-8)
 
 
 
