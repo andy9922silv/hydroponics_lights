@@ -42,10 +42,11 @@ while True:
         GPIO.out(22, GPIO.LOW) # Turn off
 
     # this if statement checks the time and checks the ph
-    if(hour %  ph_constant == 0)
-
+    if(hour %  ph_constant == 0):
+        pass
+        
     # this if statement checks the time and pumps the water
-    if(minute % wp_constant == 0 and minute < wp_for )
-
+    if(minute % wp_constant == 0 and minute < wp_for ):
+        pass
 
     #time.sleep(2) # sleeps for 2 seconds
