@@ -11,12 +11,12 @@ GPIO.setmode(GPIO.BOARD)
 current_time = datetime.now()
 print datetime.now()
 print current_time.minute
-print current_time.hour
+print (current_time.hour-8)
 
 
 while True:
     minute = datetime.now().minute
-    hour = datetime.now().hour
+    hour = (datetime.now().hour-8)
     if (minute % 2 == 0):
         GPIO.output(3, GPIO.HIGH) # Turn on
     if (minute % 2 == 1):
