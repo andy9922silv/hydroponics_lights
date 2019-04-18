@@ -6,7 +6,7 @@ from time import sleep # Import the sleep function from the time module
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
 GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and set initial value to low (off)
-GPIO.setup(22, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and set initial value to low (off)
+GPIO.setup(3, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and set initial value to low (off)
 GPIO.setmode(GPIO.BOARD)
 
 current_time = datetime.now()
@@ -17,7 +17,7 @@ print (current_time.hour-8)
 
 
 # if statement works after the first minute of every hour
-# pin 22 controls the water pump with the relay control
+# pin 3 controls the water pump with the relay control
 # pin 19 controls the light
 
 #ph constant check like every minute or 10 times per minute
@@ -37,9 +37,9 @@ while True:
         GPIO.output(19, GPIO.HIGH) # Turn on
     # this if statement checks the time and turns on or off the pump
     if(hour % 2 == 0 and minute <= 40):
-        GPIO.output(22, GPIO.HIGH) # Turn on
+        GPIO.output(3, GPIO.HIGH) # Turn on
     else:
-        GPIO.output(22, GPIO.LOW) # Turn off
+        GPIO.output(3, GPIO.LOW) # Turn off
     # this if statement checks the time and turns off the lights
     if(minute == 51):
         GPIO.output(19, GPIO.LOW) # Turn off
