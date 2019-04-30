@@ -33,7 +33,7 @@ while True:
     minute = datetime.now().minute
     hour = datetime.now().hour
     # this if statement checks the time and turns on the lights 
-    if(hour >= 01 and minute <= 50):
+    if(hour >= 01 and minute <= 00):
         GPIO.output(19, GPIO.HIGH) # Turn on
     # this if statement checks the time and turns on or off the pump
     if(hour % 2 == 0 and minute <= 40):
@@ -41,7 +41,7 @@ while True:
     else:
         GPIO.output(3, GPIO.LOW) # Turn off
     # this if statement checks the time and turns off the lights
-    if(minute == 51):
+    if(hour >=):
         GPIO.output(19, GPIO.LOW) # Turn off
 
     # this if statement checks the time and checks the ph
