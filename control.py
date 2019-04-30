@@ -41,7 +41,7 @@ while True:
     else:
         GPIO.output(3, GPIO.LOW) # Turn off
     # this if statement checks the time and turns off the lights
-    if(hour >=):
+    if(hour >= 13):
         GPIO.output(19, GPIO.LOW) # Turn off
 
     # this if statement checks the time and checks the ph
