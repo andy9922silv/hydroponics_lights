@@ -32,7 +32,7 @@ wp_for = 45
 while True:
     minute = datetime.now().minute
     hour = datetime.now().hour
-    # this if statement checks the time and turns on the lights 
+    # this if statement checks the time and turns on the lights for 15 hours
     if(hour >= 01 and minute <= 00):
         GPIO.output(19, GPIO.HIGH) # Turn on
     # this if statement checks the time and turns on or off the pump
@@ -41,7 +41,7 @@ while True:
     else:
         GPIO.output(3, GPIO.LOW) # Turn off
     # this if statement checks the time and turns off the lights
-    if(hour >= 13):
+    if(hour >= 17):
         GPIO.output(19, GPIO.LOW) # Turn off
 
     # this if statement checks the time and checks the ph
