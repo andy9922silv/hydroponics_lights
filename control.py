@@ -30,26 +30,26 @@ wp_for = 45
 
 
 while True:
-    minute = datetime.now().minute
-    hour = datetime.now().hour
-    # this if statement checks the time and turns on the lights for 15 hours
-    if (hour >= 01 and minute <= 00):
-        GPIO.output(19, GPIO.HIGH) # Turn on
-    # this if statement checks the time and turns on or off the pump
-    if (hour % 2 == 0 and minute <= 40):
-        GPIO.output(3, GPIO.HIGH) # Turn on
-    else:
-        GPIO.output(3, GPIO.LOW) # Turn off
-    # this if statement checks the time and turns off the lights
-    if (hour >= 17):
-        GPIO.output(19, GPIO.LOW) # Turn off
+        minute = datetime.now().minute
+        hour = datetime.now().hour
+        # this if statement checks the time and turns on the lights for 15 hours
+        if (hour >= 01 and minute <= 00):
+                GPIO.output(19, GPIO.HIGH) # Turn on
+        # this if statement checks the time and turns on or off the pump
+        if (hour % 2 == 0 and minute <= 40):
+                GPIO.output(3, GPIO.HIGH) # Turn on
+        else:
+                GPIO.output(3, GPIO.LOW) # Turn off
+        # this if statement checks the time and turns off the lights
+        if (hour >= 17):
+                GPIO.output(19, GPIO.LOW) # Turn off
 
-    # this if statement checks the time and checks the ph
-    if (hour %  ph_constant == 0):
-        pass
-        
-    # this if statement checks the time and pumps the water
-    if (minute % wp_constant == 0 and minute < wp_for ):
-        pass
+        # this if statement checks the time and checks the ph
+        if (hour %  ph_constant == 0):
+                pass
+
+        # this if statement checks the time and pumps the water
+        if (minute % wp_constant == 0 and minute < wp_for ):
+                pass
 
     #time.sleep(2) # sleeps for 2 seconds
